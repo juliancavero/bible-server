@@ -169,9 +169,9 @@ export class SaintsService {
       saint.image = cloudinaryResponse.secure_url;
     }
 
-    if (isMain) {
+    /* if (isMain) {
       await this.unMainAllSaints(month, day);
-    }
+    } */
 
     return await this.saintsRepository.save(saint);
   }
@@ -210,9 +210,9 @@ export class SaintsService {
       saint.image = cloudinaryResponse.secure_url;
     }
 
-    if (isMain) {
+    /* if (isMain) {
       await this.unMainAllSaints(month, day);
-    }
+    } */
 
     return await this.saintsRepository.save(saint);
   }
